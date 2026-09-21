@@ -6,9 +6,7 @@
 
 | Nome | RM |
 |---|---|
-| Anna Karla | 569604 |
 | Arthur Araújo | 573308 |
-| Beatriz da Silva | 570619 |
 | Daniel Alejandro | 573075 |
 | Victor Hugo Lavaqui | 573838 |
 | Wendel Pedro | 573126 |
@@ -50,10 +48,7 @@ evals/
   sprint3_results_*_offline_exemplo.json   exemplos gerados em modo offline (não são dados finais)
 
 docs/
-  relatorio_evolucao.txt      relatório de evolução (converter para PDF antes de entregar)
   relatorio_modelos.md         comparação gpt-oss:120b vs qwen3:8b, parâmetros documentados
-
-entrega.txt                   nome, RM, turma de cada integrante + link do repositório
 ```
 
 ## Como rodar
@@ -104,8 +99,7 @@ antes/depois em `docs/relatorio_evolucao.txt`.
 
 ## Sobre o acesso ao modelo
 
-O grupo possui apenas a API key do Ollama Cloud (sem modelos instalados
-localmente). Por isso, `ChatOllama` é configurado com `base_url=
+`ChatOllama` é configurado com `base_url=
 "https://ollama.com"` e autenticação via header `Authorization: Bearer
 <OLLAMA_API_KEY>` — não é necessário instalar Ollama nem ter GPU
 própria. Detalhes em `src/chain/builder.py`.
